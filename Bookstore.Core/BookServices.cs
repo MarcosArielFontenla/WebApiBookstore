@@ -16,32 +16,32 @@ namespace Bookstore.Core
             _books = dbClient.GetBooksCollection();
         }
 
-        public List<Book> GetBooks()
+        public async Task<List<Book>> GetBooks()
         {
-            return _books.Find(b => true).ToList();
+            return await _books.Find(b => true).ToListAsync();
         }
 
-        public Book GetBookById(string id)
+        public async Task<Book> GetBookById(string id)
         {
-            return _books.Find(b =>b.Id == id).First();
+            return await _books.Find(b =>b.Id == id).FirstAsync();
         }
 
-        public Book AddBook(Book book)
+        public async Task<Book> AddBook(Book book)
         {
-            _books.InsertOne(book);
+            await _books.InsertOneAsync(book);
             return book;
         }
 
-        public Book UpdateBook(Book book)
+        public async Task<Book> UpdateBook(Book book)
         {
-            GetBookById(book.Id);
-            _books.ReplaceOne(b => b.Id == book.Id, book);
+            await GetBookById(book.Id);
+            await _books.ReplaceOneAsync(b => b.Id == book.Id, book);
             return book;
         }
 
-        public void DeleteBook(string id)
+        public async Task DeleteBook(string id)
         {
-            _books.DeleteOne(b => b.Id == id);
+            await _books.DeleteOneAsync(b => b.Id == id);
         }
     }
 }

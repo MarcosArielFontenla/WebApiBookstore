@@ -8,10 +8,10 @@ namespace Bookstore.Core
 {
     public interface IBookServices
     {
-        List<Book> GetBooks();
-        Book GetBookById(string id);
-        Book AddBook(Book book);
-        Book UpdateBook(Book book);
-        void DeleteBook(string id);
+        Task<List<Book>> GetBooks();
+        Task<Book> GetBookById(string id);
+        Task<Book> AddBook(Book book);
+        Task<Book> UpdateBook(Book book);
+        Task DeleteBook(string id);
     }
 }

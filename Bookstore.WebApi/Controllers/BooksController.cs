@@ -1,6 +1,7 @@
 ﻿using Bookstore.Core;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.Threading.Tasks;
 
 namespace Bookstore.WebApi.Controllers
 {
@@ -16,34 +17,34 @@ namespace Bookstore.WebApi.Controllers
         }
 
         [HttpGet]
-        public IActionResult GetBooks()
+        public async Task<IActionResult> GetBooks()
         {
-            return Ok(_bookServices.GetBooks());
+            return Ok(await _bookServices.GetBooks());
         }
 
         [HttpGet("{id}", Name = "GetBookById")]
-        public IActionResult GetBookById(string id)
+        public async Task<IActionResult> GetBookById(string id)
         {
-            return Ok(_bookServices.GetBookById(id));
+            return Ok(await _bookServices.GetBookById(id));
         }
 
         [HttpPost]
-        public IActionResult AddBook(Book book)
+        public async Task<IActionResult> AddBook(Book book)
         {
-            _bookServices.AddBook(book);
+            await _bookServices.AddBook(book);
             return CreatedAtRoute("GetBookbyId", new {id = book.Id}, book);
         }
 
         [HttpPut]
-        public IActionResult UpdateBook(Book book)
+        public async Task<IActionResult> UpdateBook(Book book)
         {
-            return Ok(_bookServices.UpdateBook(book));
+            return Ok(await _bookServices.UpdateBook(book));
         }
 
         [HttpDelete("{id}")]
-        public IActionResult DeleteBook(string id)
+        public async Task<IActionResult> DeleteBook(string id)
         {
-            _bookServices.DeleteBook(id);
+            await _bookServices.DeleteBook(id);
             return NoContent();
         }
     }
