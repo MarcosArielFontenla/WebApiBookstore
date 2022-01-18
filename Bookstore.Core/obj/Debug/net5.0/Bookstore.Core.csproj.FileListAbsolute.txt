@@ -1,0 +1,12 @@
+C:\Users\Marcos.Fontenla\Documents\VisualStudioProjects\WebApis\Bookstore.WebApi\Bookstore.Core\bin\Debug\net5.0\Bookstore.Core.deps.json
+C:\Users\Marcos.Fontenla\Documents\VisualStudioProjects\WebApis\Bookstore.WebApi\Bookstore.Core\bin\Debug\net5.0\Bookstore.Core.dll
+C:\Users\Marcos.Fontenla\Documents\VisualStudioProjects\WebApis\Bookstore.WebApi\Bookstore.Core\bin\Debug\net5.0\ref\Bookstore.Core.dll
+C:\Users\Marcos.Fontenla\Documents\VisualStudioProjects\WebApis\Bookstore.WebApi\Bookstore.Core\bin\Debug\net5.0\Bookstore.Core.pdb
+C:\Users\Marcos.Fontenla\Documents\VisualStudioProjects\WebApis\Bookstore.WebApi\Bookstore.Core\obj\Debug\net5.0\Bookstore.Core.csproj.AssemblyReference.cache
+C:\Users\Marcos.Fontenla\Documents\VisualStudioProjects\WebApis\Bookstore.WebApi\Bookstore.Core\obj\Debug\net5.0\Bookstore.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Marcos.Fontenla\Documents\VisualStudioProjects\WebApis\Bookstore.WebApi\Bookstore.Core\obj\Debug\net5.0\Bookstore.Core.AssemblyInfoInputs.cache
+C:\Users\Marcos.Fontenla\Documents\VisualStudioProjects\WebApis\Bookstore.WebApi\Bookstore.Core\obj\Debug\net5.0\Bookstore.Core.AssemblyInfo.cs
+C:\Users\Marcos.Fontenla\Documents\VisualStudioProjects\WebApis\Bookstore.WebApi\Bookstore.Core\obj\Debug\net5.0\Bookstore.Core.csproj.CoreCompileInputs.cache
+C:\Users\Marcos.Fontenla\Documents\VisualStudioProjects\WebApis\Bookstore.WebApi\Bookstore.Core\obj\Debug\net5.0\Bookstore.Core.dll
+C:\Users\Marcos.Fontenla\Documents\VisualStudioProjects\WebApis\Bookstore.WebApi\Bookstore.Core\obj\Debug\net5.0\ref\Bookstore.Core.dll
+C:\Users\Marcos.Fontenla\Documents\VisualStudioProjects\WebApis\Bookstore.WebApi\Bookstore.Core\obj\Debug\net5.0\Bookstore.Core.pdb
